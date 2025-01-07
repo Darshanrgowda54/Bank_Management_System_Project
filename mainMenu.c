@@ -16,10 +16,10 @@ int mainMenu()
 {
     user *head = NULL;
 
-    // head = loadAccountsFromFile(head);
-    // loadTransactionsFromFile(head);
+    head = loadAccountsFromFile(head);
+    loadTransactionsFromFile(head);
 
-    head = loadUserDataFromFile("users.txt", "transactions.txt");
+    //head = loadUserDataFromFile("users.txt", "transactions.txt");
 
     int choice;
 
@@ -57,8 +57,7 @@ int mainMenu()
         }
 
         case EXIT:
-
-            saveUserDataToFile(head, "users.txt", "transactions.txt");
+            //saveUserDataToFile(head, "users.txt", "transactions.txt");
             printf("Thank you. Please visit again\n");
             free(head);
             return 0;
