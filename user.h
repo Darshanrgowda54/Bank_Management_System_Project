@@ -5,12 +5,12 @@
 #include "transaction.h"
 
 typedef struct user {
-    char userID[20];
-    char userPassword[20];
-    char name[50];
-    char mobile[15];
-    char email[50];
-    char address[100];
+    char userID[10];
+    char userPassword[10];
+    char name[30];
+    char mobile[12];
+    char email[30];
+    char address[30];
     bankAccount account;
     transaction *transactions;
     struct user *next;

@@ -3,7 +3,7 @@
 
 typedef struct bankAccount
 {
-    char accountType[20];
+    char accountType[10];
     int accountNumber;
     float balance;
 } bankAccount;
